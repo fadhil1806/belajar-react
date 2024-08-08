@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import TodoApp from '../todo-list-latihan-react-2/todo';
 
 function Welcome(props) {
     return <h1>Welcome back, {props.name}</h1>
@@ -56,10 +57,6 @@ function NameForm() {
         </form>
     )
 
-    // const handleSubmit = (event) => {
-    //     alert('Nama yang diinput: ' + value);
-    //     event.preventDefault(); // Mencegah default action dari form submit
-    //   }
 
 }
 
@@ -83,6 +80,7 @@ export default function Home() {
             <Greeting isLoggedIn={false}></Greeting>
             <NumberList />
             <NameForm />
+            <TodoApp/>
         </main>
     )
 }
